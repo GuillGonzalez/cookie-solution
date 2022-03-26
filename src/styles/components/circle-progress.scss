@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.circle-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  height: 70px;
+  
+  &__label {
+    position: absolute;
+    font-weight: bold;
+    white-space: normal;
+    font-size: 22px;
+    &:after {
+      content: "%";
+      vertical-align: vertical-align;
+      font-size: 11px;
+    }
+  }
+
+  .circular-chart {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  
+  .bg {
+    stroke: $color-gray-1;
+  }
+  
+  .front {
+    animation: progress 1s ease-out forwards;
+    stroke: $color-secondary;
+  }
+
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+}

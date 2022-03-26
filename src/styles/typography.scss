@@ -1,0 +1,26 @@
+@import 'variables';
+
+.text-xxxl {
+  font-size: 34px;
+}
+
+.text-xxl {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-xl {
+  font-size: 16px;
+}
+
+.text-gray-2 {
+  color: $color-gray-3;
+}
+
+.h4 {
+  font-size: 17px;
+}
+.h5 {
+  font-size: 1rem;
+  color: $color-gray-7;
+}

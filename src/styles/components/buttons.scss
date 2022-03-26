@@ -1,0 +1,79 @@
+@import '../variables';
+
+.btn {
+  border: 1px solid $color-gray-6;
+  border-radius: 6px;
+  
+  &:hover {
+    border-color: $color-primary;
+    box-shadow: 0px 0px 2px 4px rgba(28,198,145,0.32);
+  }
+  &.--selected {
+    border: 2px solid $color-primary;
+  }
+}
+
+.btn-xxl {
+  width: 152px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: $space-small;
+
+  img {
+    width: 170px;
+    height: 90px;
+    object-fit: cover;
+  }
+}
+
+.btn-xxxl {
+  background-color: $color-primary;
+  border: none;
+  width: 30%;
+  display: grid;
+  place-content: center;
+  height: 60px;
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 36px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-picture {
+  position: relative;
+  width: 170px;
+  height: 90px;
+  margin: $space-small;
+  margin-left: 0;
+  overflow: hidden;
+  img {
+    width: 170px;
+    height: 90px;
+    object-fit: cover;
+  }
+  &.--extended {
+    width: 200px;
+    height: 78px;
+    img {
+      position: absolute;
+      object-fit: scale-down;
+      left: 48px;
+    }
+  }
+}
+
+.btn-text {
+  background-color: transparent;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+  h4 {
+    color: $color-gray-6;
+  }
+}
