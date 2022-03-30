@@ -12,6 +12,7 @@ form {
     display: grid;
     grid-template-columns: 22px auto;
     gap: 0.5em;
+    margin: $space-small;
   }
 
   .form-control + .form-control {

@@ -11,7 +11,9 @@
   <meta name="viewport"
         content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 </head>
-  <div style="height:60px;margin:25px"></div>
+  <header style="height:60px;margin:25px">
+    <img class="" src="<%=require('./images/logo-iubenda.png')%>" alt="logo iubenda"/>
+  </header>
   <div class="container">
 
   <form class="cookie-solution">
@@ -58,7 +60,10 @@
         </div>
       </div>
       <div class="cookie-solution__add-banner__title">
-        <div class="toggle"></div>
+        <label class="toggle">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
         <h2 class="text-xxxl">Add a cookie banner</h2>
       </div>
       <div class="cookie-solution__add-banner__controls">

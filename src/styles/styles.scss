@@ -3,12 +3,18 @@
 @import 'typography';
 @import 'components/cookie-solution.scss';
 @import 'components/buttons.scss';
+@import 'components/toggle.scss';
 @import 'components/circle-progress.scss';
 @import 'components/form.scss';
 
 body {
   background-color: $color-bg-shade;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: grid;
+  place-content: center;
 }
 
 .container {

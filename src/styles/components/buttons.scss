@@ -3,6 +3,7 @@
 .btn {
   border: 1px solid $color-gray-6;
   border-radius: 6px;
+  margin: $space-small;
   
   &:hover {
     border-color: $color-primary;
